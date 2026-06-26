@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,17 +32,16 @@ body{min-height:100vh;background:#fff;color:#222;display:flex;justify-content:ce
 .bar-w{height:9px;background:#f1f3f8;border-radius:8px;overflow:hidden;margin:10px 0 24px;}
 .bar{height:100%;width:0%;border-radius:8px;background:#1f4cff;transition:width .55s cubic-bezier(.4,0,.2,1),background .4s;}
 
-/* ===== ROW FIX: always single line, no wrapping ===== */
 .rows{display:flex;flex-direction:column;gap:12px;}
-.row{display:grid;grid-template-columns:1.4fr 1fr 0.8fr 44px 44px;gap:8px;align-items:center;animation:ri .18s ease;width:100%;}
+.row{display:flex;gap:11px;align-items:center;animation:ri .18s ease;}
 @keyframes ri{from{opacity:0;transform:translateY(-5px);}to{opacity:1;}}
-.row input{width:100%;min-width:0;padding:11px 10px;border:1.5px solid #e1e5f0;border-radius:12px;background:#fafbff;font-size:13px;transition:border-color .2s;}
+.row input{flex:1;padding:13px 15px;border:1.5px solid #e1e5f0;border-radius:12px;background:#fafbff;font-size:14px;transition:border-color .2s;}
 .row input:focus{outline:none;border-color:#1f4cff;}
 .row input.err{border-color:#e53935;}
-.badge{min-width:36px;width:44px;text-align:center;font-size:11px;font-weight:700;padding:6px 2px;border-radius:10px;background:#f1f3f8;color:#aaa;transition:all .25s;}
+.badge{min-width:44px;text-align:center;font-size:12px;font-weight:700;padding:8px 4px;border-radius:10px;background:#f1f3f8;color:#aaa;transition:all .25s;}
 .bA{background:#e8f5e9;color:#2e7d32;}.bB{background:#e3f2fd;color:#1565c0;}
 .bC{background:#fff8e1;color:#e65100;}.bD{background:#fce4ec;color:#880e4f;}.bF{background:#ffebee;color:#b71c1c;}
-.rem{width:44px;height:44px;border:none;border-radius:12px;background:#ffecec;color:#d60000;font-weight:700;cursor:pointer;font-size:14px;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
+.rem{padding:0 14px;height:44px;border:none;border-radius:12px;background:#ffecec;color:#d60000;font-weight:700;cursor:pointer;font-size:14px;flex-shrink:0;}
 .actions{margin-top:24px;display:flex;gap:13px;}
 .btn{flex:1;padding:14px;border:none;border-radius:14px;font-weight:600;cursor:pointer;font-size:14px;transition:all .2s;}
 .add{background:#f1f3f8;color:#333;}.calc{background:#1f4cff;color:#fff;box-shadow:0 4px 16px rgba(31,76,255,.3);}
@@ -52,10 +50,7 @@ body{min-height:100vh;background:#fff;color:#222;display:flex;justify-content:ce
 .prbtn.on{display:inline-block;}
 .bdown{margin-top:24px;display:none;}.bdown.on{display:block;animation:ri .25s ease;}
 .stitle{font-size:12px;font-weight:600;letter-spacing:1.2px;color:#999;text-transform:uppercase;margin-bottom:14px;text-align:left;}
-
-/* ===== TABLE: horizontal scroll on small screens ===== */
-.tbl-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}
-table{width:100%;min-width:420px;border-collapse:collapse;font-size:13px;}
+table{width:100%;border-collapse:collapse;font-size:13px;}
 th{background:#f4f6fb;padding:9px 12px;text-align:left;font-size:11px;color:#888;font-weight:600;text-transform:uppercase;}
 th:first-child{border-radius:8px 0 0 8px;}th:last-child{border-radius:0 8px 8px 0;}
 td{padding:10px 12px;border-bottom:1px solid #f0f2f8;}
@@ -68,24 +63,19 @@ tr:last-child td{border-bottom:none;font-weight:700;background:#f8f9ff;}
 .sbar-fill{height:100%;border-radius:6px;transition:width .5s ease;}
 .sbar-val{min-width:32px;font-weight:600;text-align:right;}
 
-/* ===== GRADING SCALE: 2 columns always ===== */
-.scale-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-.si{border-radius:14px;padding:14px 16px;display:flex;align-items:center;gap:12px;background:#f8f9ff;border:1.5px solid #e8eeff;transition:transform .2s;overflow:hidden;}
+.scale-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;}
+.si{border-radius:14px;padding:14px 16px;display:flex;align-items:center;gap:14px;background:#f8f9ff;border:1.5px solid #e8eeff;transition:transform .2s;}
 .si:hover{transform:translateY(-2px);}
-.sl{font-size:24px;font-weight:700;min-width:32px;flex-shrink:0;}
-.sp{font-size:14px;font-weight:700;color:#1f4cff;}
+.sl{font-size:26px;font-weight:700;min-width:36px;}
+.sp{font-size:15px;font-weight:700;color:#1f4cff;}
 .sr{font-size:11px;color:#888;margin-top:1px;}
-.sd{font-size:11px;color:#aaa;word-break:break-word;}
-
-/* ===== CONVERTER: no overflow ===== */
-.conv-wrap{margin-top:28px;background:#f4f6fb;border-radius:16px;padding:22px 24px;overflow:hidden;}
+.sd{font-size:11px;color:#aaa;}
+.conv-wrap{margin-top:28px;background:#f4f6fb;border-radius:16px;padding:22px 24px;}
 .conv-wrap h3{font-size:14px;font-weight:700;color:#333;margin-bottom:14px;text-align:left;}
-.conv-row{display:flex;gap:10px;align-items:center;width:100%;}
-.conv-inp{flex:1;min-width:0;padding:13px 12px;border:1.5px solid #e1e5f0;border-radius:12px;background:#fff;font-size:15px;font-weight:600;}
+.conv-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;}
+.conv-inp{flex:1;min-width:140px;padding:13px 15px;border:1.5px solid #e1e5f0;border-radius:12px;background:#fff;font-size:15px;font-weight:600;}
 .conv-inp:focus{outline:none;border-color:#1f4cff;}
-.conv-arrow{font-size:18px;color:#1f4cff;flex-shrink:0;}
-.conv-res{flex:1;min-width:0;padding:13px 12px;border-radius:12px;background:#e8eeff;color:#1f4cff;font-size:15px;font-weight:700;text-align:center;transition:all .3s;word-break:break-word;}
-
+.conv-res{flex:1;min-width:140px;padding:13px 15px;border-radius:12px;background:#e8eeff;color:#1f4cff;font-size:17px;font-weight:700;text-align:center;transition:all .3s;}
 .hempty{text-align:center;padding:50px 20px;color:#bbb;font-size:14px;}
 .hempty span{font-size:40px;display:block;margin-bottom:12px;}
 .hlist{display:flex;flex-direction:column;gap:12px;}
@@ -115,45 +105,34 @@ tr:last-child td{border-bottom:none;font-weight:700;background:#f8f9ff;}
 .tf-card span{font-size:22px;display:block;margin-bottom:6px;}
 .tf-card p{font-size:13px;font-weight:600;color:#333;}
 .tf-card small{font-size:11px;color:#888;}
-.toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(14px);background:#1a1a2e;color:#fff;padding:11px 22px;border-radius:12px;font-size:13px;opacity:0;pointer-events:none;transition:all .28s;z-index:9999;white-space:nowrap;max-width:90vw;}
+.toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(14px);background:#1a1a2e;color:#fff;padding:11px 22px;border-radius:12px;font-size:13px;opacity:0;pointer-events:none;transition:all .28s;z-index:9999;white-space:nowrap;}
 .toast.on{opacity:1;transform:translateX(-50%) translateY(0);}
+
 .footer{margin-top:28px;font-size:12px;color:#777;}
 
-/* ===== MOBILE ===== */
 @media(max-width:600px){
-  body{padding:12px;padding-bottom:100px;}
+  body{flex-direction:column;justify-content:flex-start;padding-top:28px;align-items:stretch;}
   .logo-fixed{position:static;background:transparent;box-shadow:none;margin-bottom:18px;text-align:center;width:100%;padding:0;}
-  .logo-fixed img{max-height:70px;box-shadow:0 10px 20px rgba(0,0,0,.1);border-radius:10px;}
-  .header h1{font-size:28px;}
+  .logo-fixed img{max-height:90px;box-shadow:0 10px 20px rgba(0,0,0,.1);border-radius:10px;}
+  .header h1{font-size:30px;}
   .result h2{font-size:46px;}
   .app{width:100%;max-width:100%;padding:0;}
-  .card{width:100%;padding:18px 14px;border-radius:18px;}
-  
-  /* ===== CRITICAL: row stays single line on mobile too ===== */
-  .row{grid-template-columns:1.2fr 0.9fr 0.7fr 36px 36px;gap:6px;}
-  .row input{padding:9px 7px;font-size:12px;border-radius:10px;}
-  .badge{width:36px;min-width:36px;font-size:10px;padding:5px 2px;border-radius:8px;}
-  .rem{width:36px;height:36px;font-size:12px;border-radius:10px;}
-  
-  .scale-grid{grid-template-columns:1fr 1fr;}
-  .conv-row{flex-direction:row;gap:8px;}
-  .conv-inp,.conv-res{font-size:13px;padding:11px 8px;}
-  .conv-arrow{font-size:14px;}
-  table{min-width:360px;}
-  .actions{flex-direction:column;}
-  .nav button{padding:9px 12px;font-size:11px;}
-  .tf-grid{grid-template-columns:1fr 1fr;}
-  .hi{flex-wrap:wrap;}
-  .hscore{min-width:50px;font-size:26px;}
-}
-
-@media(max-width:380px){
-  .row{grid-template-columns:1fr 0.85fr 0.65fr 32px 32px;gap:5px;}
-  .row input{padding:8px 6px;font-size:11px;}
+  .card{width:100%;padding:22px 16px;border-radius:18px;}
+  .row{display:flex;flex-direction:column;gap:10px;}
+  .row input{width:100%;min-width:0;}
+  .rem{width:100%;}
+  .scale-grid{grid-template-columns:1fr;}
+  table{display:block;overflow-x:auto;white-space:nowrap;}
+  .conv-wrap{padding:18px 14px;}
+  .result h2{font-size:52px;}
+  .header h1{font-size:32px;}
   .badge{display:none;}
-  .row{grid-template-columns:1fr 0.85fr 0.65fr 32px;gap:5px;}
+  .actions{flex-direction:column;}
+  .nav button{padding:9px 14px;font-size:12px;}
+  .scale-grid{grid-template-columns:1fr 1fr;}
+  .conv-row{flex-direction:column;}
+  .tf-grid{grid-template-columns:1fr;}
 }
-
 @media print{
   .nav,.actions,.rem,.logo-fixed,.prbtn,.itoggle,.toast,.hdel,.hclr,.sbtn{display:none!important;}
   .card{box-shadow:none;border:1px solid #ddd;}
@@ -201,7 +180,7 @@ tr:last-child td{border-bottom:none;font-weight:700;background:#f8f9ff;}
       </div>
       <div class="bdown" id="bdown">
         <div class="stitle" style="margin-top:20px">Detailed Breakdown</div>
-        <div class="tbl-wrap"><table id="btbl"></table></div>
+        <table id="btbl"></table>
         <div class="sbars" id="sbars"></div>
       </div>
     </div>
@@ -214,7 +193,7 @@ tr:last-child td{border-bottom:none;font-weight:700;background:#f8f9ff;}
         <h3>⚡ Quick Marks → Grade Converter</h3>
         <div class="conv-row">
           <input type="number" class="conv-inp" id="cminp" placeholder="Enter marks (0–100)" min="0" max="100" oninput="convertM()">
-          <span class="conv-arrow">→</span>
+          <span style="font-size:20px;color:#1f4cff">→</span>
           <div class="conv-res" id="cmres">— pts &nbsp; —</div>
         </div>
       </div>
@@ -226,6 +205,7 @@ tr:last-child td{border-bottom:none;font-weight:700;background:#f8f9ff;}
       <div id="hcon"></div>
     </div>
   </div>
+
   <div class="sec" id="sec-sim">
     <div class="card">
       <div class="result"><span>PLANNING TOOL</span><h2 style="font-size:36px;font-family:'Salsa',cursive;margin-top:6px">What-If Simulator</h2></div>
@@ -300,6 +280,7 @@ function goSec(k,btn){
   if(k==="history")renderHist();
   if(k==="scale")buildScale();
 }
+
 let mode="gpa",rc=0;
 function switchMode(m){
   mode=m;
@@ -322,14 +303,14 @@ function addRow(){
   d.className="row";d.id="r"+rc;
   const bid="b"+rc;
   d.innerHTML=mode==="gpa"
-    ?`<input type="text" placeholder="Subject name">
+    ?`<input type="text" placeholder="Subject name" style="flex:1.3">
        <input type="number" placeholder="Marks (0–100)" min="0" max="100" step="0.5" oninput="liveG(this,'${bid}')">
-       <input type="number" placeholder="Cr Hrs" min="0.5" max="6" step="0.5">
+       <input type="number" placeholder="Credit Hrs" min="0.5" max="6" step="0.5">
        <div class="badge" id="${bid}">—</div>
        <button class="rem" onclick="delR('r${rc}')">✕</button>`
-    :`<input type="text" placeholder="Semester name">
+    :`<input type="text" placeholder="Semester name" style="flex:1.3">
        <input type="number" placeholder="GPA (0–4)" min="0" max="4" step="0.01" oninput="liveCG(this,'${bid}')">
-       <input type="number" placeholder="Cr Hrs" min="1" max="30" step="1">
+       <input type="number" placeholder="Credit Hrs" min="1" max="30" step="1">
        <div class="badge" id="${bid}">—</div>
        <button class="rem" onclick="delR('r${rc}')">✕</button>`;
   document.getElementById("inputs").appendChild(d);
