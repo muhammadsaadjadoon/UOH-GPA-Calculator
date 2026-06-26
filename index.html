@@ -129,8 +129,18 @@ tr:last-child td{border-bottom:none;font-weight:700;background:#f8f9ff;}
   .badge{display:none;}
   .actions{flex-direction:column;}
   .nav button{padding:9px 14px;font-size:12px;}
-  .scale-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.si{min-width:0;padding:12px;}.conv-row span{display:none;}.conv-inp,.conv-res{width:100%;min-width:0;}
+  .scale-grid{grid-template-columns:1fr 1fr;}
   .conv-row{flex-direction:column;}
+
+  .hi{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px;padding:20px 16px;}
+  .hscore{width:100%;min-width:0;font-size:42px;}
+  .hinfo{width:100%;text-align:center;}
+  .htype{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap;}
+  .hdet{line-height:1.7;margin-top:8px;}
+  .hi>div:last-child{width:100%;display:flex;flex-direction:column;align-items:center;}
+  .hdate{margin-bottom:10px;}
+  .hdel{width:100%;max-width:220px;}
+
   .tf-grid{grid-template-columns:1fr;}
 }
 @media print{
@@ -209,7 +219,7 @@ tr:last-child td{border-bottom:none;font-weight:700;background:#f8f9ff;}
   <div class="sec" id="sec-sim">
     <div class="card">
       <div class="result"><span>PLANNING TOOL</span><h2 style="font-size:36px;font-family:'Salsa',cursive;margin-top:6px">What-If Simulator</h2></div>
-      <p style="font-size:13px;color:#888;margin-bottom:20px">Check the GPA needed in the next semester to reach the target GPA.</p>
+      <p style="font-size:13px;color:#888;margin-bottom:20px">Check the GPA needed in the next semester to reach the target CGPA.</p>
       <div class="sg"><label>Current CGPA (0 if first sem)</label><input type="number" class="sinp" id="sCur" placeholder="e.g. 3.20" min="0" max="4" step="0.01"></div>
       <div class="sg"><label>Credits completed so far</label><input type="number" class="sinp" id="sDone" placeholder="e.g. 60" min="0"></div>
       <div class="sg"><label>Credits remaining this semester</label><input type="number" class="sinp" id="sRem" placeholder="e.g. 18" min="1"></div>
@@ -431,7 +441,7 @@ function renderHist(){
     const col=barcol(x.val);const[bg,fg]=CLRS[x.letter]||["#e8eeff","#1f4cff"];
     return`<div class="hi"><div class="hscore" style="color:${col}">${x.val.toFixed(2)}</div>
     <div class="hinfo"><div class="htype">${x.type.toUpperCase()} &mdash; <span style="background:${bg};color:${fg};padding:2px 10px;border-radius:20px;font-size:11px">${x.letter}</span></div>
-    <div class="hdet">${x.count} ${x.type==="gpa"?"subjects":"semesters"} • ${x.tC} cr hrs • ${x.tQ} QP</div></div>
+    <div class="hdet">${x.count} ${x.type==="gpa"?"Subjects":"Semesters"}<br>${x.tC} Credit Hours<br>${x.tQ} QP</div></div>
     <div><div class="hdate">${x.ts}</div><button class="hdel" onclick="delH(${i})">Remove</button></div></div>`;
   }).join("")}
   <button class="hclr" onclick="clrH()">🗑 Clear All History</button></div>`;
