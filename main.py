@@ -87,6 +87,14 @@ def calc_cgpa(req: CGPAReq):
     cgpa=round(tQ/tC,2) if tC else 0
     return {"cgpa":cgpa,"letter":gpa_to_letter(cgpa),"total_credits":tC,
             "total_quality_points":round(tQ,2),"semesters":details}
+@app.post("/calculate")
+async def calculate_gpa(data: dict):
+    # Jo data user ne send kiya usay backend terminal/logs mein dekhne ke liye
+    print(f"--- 🚀 NEW CALCULATION DATA RECEIVED ---")
+    print(f"User Data: {data}") 
+    
+    # Aap ka baaki gpa calculation ka code niche chalta rahega...
+    return {"gpa": final_gpa}
 @app.get("/grading-scale")
 def grading_scale():
     return [{"range":f"{lo}-{hi}","grade":l,"points":p} for lo,hi,l,p in SCALE]
