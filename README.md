@@ -4,7 +4,7 @@ A clean, interactive, and feature-rich web application built to simplify academi
 
 The application is built using **Python** and is fully live and deployed on **Render**.
 
-🔗 **Live Demo:** 
+🔗 **Live Demo:** https://uoh-gpa-calculator-dt4u.onrender.com/
 
 ## 🚀 Key Features
 
