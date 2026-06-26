@@ -111,6 +111,15 @@ tr:last-child td{border-bottom:none;font-weight:700;background:#f8f9ff;}
 .footer{margin-top:28px;font-size:12px;color:#777;}
 
 @media(max-width:600px){
+
+  /* History mobile only */
+  .hi{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;}
+  .hscore{width:100%;min-width:0;}
+  .hinfo{width:100%;text-align:center;}
+  .hdet{line-height:1.6;}
+  .hi>div:last-child{width:100%;display:flex;flex-direction:column;align-items:center;}
+  .hdel{width:100%;max-width:220px;}
+
   body{flex-direction:column;justify-content:flex-start;padding-top:28px;align-items:stretch;}
   .logo-fixed{position:static;background:transparent;box-shadow:none;margin-bottom:18px;text-align:center;width:100%;padding:0;}
   .logo-fixed img{max-height:90px;box-shadow:0 10px 20px rgba(0,0,0,.1);border-radius:10px;}
@@ -129,18 +138,8 @@ tr:last-child td{border-bottom:none;font-weight:700;background:#f8f9ff;}
   .badge{display:none;}
   .actions{flex-direction:column;}
   .nav button{padding:9px 14px;font-size:12px;}
-  .scale-grid{grid-template-columns:1fr 1fr;}
+  .scale-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.si{min-width:0;padding:12px;}.conv-row span{display:none;}.conv-inp,.conv-res{width:100%;min-width:0;}
   .conv-row{flex-direction:column;}
-
-  .hi{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px;padding:20px 16px;}
-  .hscore{width:100%;min-width:0;font-size:42px;}
-  .hinfo{width:100%;text-align:center;}
-  .htype{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap;}
-  .hdet{line-height:1.7;margin-top:8px;}
-  .hi>div:last-child{width:100%;display:flex;flex-direction:column;align-items:center;}
-  .hdate{margin-bottom:10px;}
-  .hdel{width:100%;max-width:220px;}
-
   .tf-grid{grid-template-columns:1fr;}
 }
 @media print{
@@ -219,7 +218,7 @@ tr:last-child td{border-bottom:none;font-weight:700;background:#f8f9ff;}
   <div class="sec" id="sec-sim">
     <div class="card">
       <div class="result"><span>PLANNING TOOL</span><h2 style="font-size:36px;font-family:'Salsa',cursive;margin-top:6px">What-If Simulator</h2></div>
-      <p style="font-size:13px;color:#888;margin-bottom:20px">Check the GPA needed in the next semester to reach the target CGPA.</p>
+      <p style="font-size:13px;color:#888;margin-bottom:20px">Check the GPA needed in the next semester to reach the target GPA.</p>
       <div class="sg"><label>Current CGPA (0 if first sem)</label><input type="number" class="sinp" id="sCur" placeholder="e.g. 3.20" min="0" max="4" step="0.01"></div>
       <div class="sg"><label>Credits completed so far</label><input type="number" class="sinp" id="sDone" placeholder="e.g. 60" min="0"></div>
       <div class="sg"><label>Credits remaining this semester</label><input type="number" class="sinp" id="sRem" placeholder="e.g. 18" min="1"></div>
