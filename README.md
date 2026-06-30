@@ -261,12 +261,15 @@ The project uses a UoH/HEC-style grading scale.
 
 <img width="1600" height="755" alt="Screenshot 2026-06-30 223301" src="https://github.com/user-attachments/assets/f285b03b-bc77-489f-b1c7-b1844bf1b6a9" />
 
-**Iphone:**
+---
+
+### Main Dashboard on Iphone
 <img width="873" height="1600" alt="WhatsApp Image 2026-06-30 at 10 38 02 PM" src="https://github.com/user-attachments/assets/3a9d16e5-9605-4abe-8df9-010f32c690b8" />
 
-**Android:**
-<img width="1080" height="2284" alt="WhatsApp Image 2026-06-30 at 10 38 57 PM" src="https://github.com/user-attachments/assets/e6800f9d-f9a1-40a6-ac7b-d8c0a6ecd579" />
+---
 
+### Main Dashboard on Android
+<img width="1080" height="2284" alt="WhatsApp Image 2026-06-30 at 10 38 57 PM" src="https://github.com/user-attachments/assets/e6800f9d-f9a1-40a6-ac7b-d8c0a6ecd579" />
 
 ---
 
