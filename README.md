@@ -259,31 +259,38 @@ The project uses a UoH/HEC-style grading scale.
 
 ### Main Dashboard
 
-<img width="100%" alt="Main Dashboard" src="https://github.com/user-attachments/assets/98ecea40-66b6-4b4e-aa2d-5d46640313f9" />
+<img width="1600" height="755" alt="Screenshot 2026-06-30 223301" src="https://github.com/user-attachments/assets/f285b03b-bc77-489f-b1c7-b1844bf1b6a9" />
+
+**Iphone:**
+<img width="873" height="1600" alt="WhatsApp Image 2026-06-30 at 10 38 02 PM" src="https://github.com/user-attachments/assets/3a9d16e5-9605-4abe-8df9-010f32c690b8" />
+
+**Android:**
+<img width="1080" height="2284" alt="WhatsApp Image 2026-06-30 at 10 38 57 PM" src="https://github.com/user-attachments/assets/e6800f9d-f9a1-40a6-ac7b-d8c0a6ecd579" />
+
 
 ---
 
 ### Grading Scale Mapping
 
-<img width="100%" alt="Grading Scale Mapping" src="https://github.com/user-attachments/assets/72f4a529-45da-48b3-bb0e-8acf905b185f" />
+<img width="1600" height="765" alt="Screenshot 2026-06-30 223321" src="https://github.com/user-attachments/assets/511ed0df-eb2e-419b-bb09-092b9a7dcbe5" />
 
 ---
 
 ### Result History
 
-<img width="100%" alt="Result History" src="https://github.com/user-attachments/assets/cdca8c45-905b-48f8-82e6-866cf671d1ce" />
+<img width="1600" height="757" alt="Screenshot 2026-06-30 223339" src="https://github.com/user-attachments/assets/e3f3ac50-0987-4f7c-b5cc-515f2bade504" />
 
 ---
 
 ### What-If Simulator
 
-<img width="100%" alt="What-If Simulator" src="https://github.com/user-attachments/assets/d4e03cb4-6a15-430b-9c2d-e59a3ac7fd15" />
+<img width="1600" height="755" alt="Screenshot 2026-06-30 223400" src="https://github.com/user-attachments/assets/e2b1b96a-ea2e-42a9-9dc7-e0cb4f2b5b9f" />
 
 ---
 
 ### Target Finder
 
-<img width="100%" alt="Target Finder" src="https://github.com/user-attachments/assets/5b8a0113-1c4b-40c5-b322-4ed853258cc4" />
+<img width="1600" height="757" alt="Screenshot 2026-06-30 223419" src="https://github.com/user-attachments/assets/4716eb3a-6026-465f-aeae-dc497988ffd1" />
 
 ---
 
