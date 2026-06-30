@@ -263,16 +263,6 @@ The project uses a UoH/HEC-style grading scale.
 
 ---
 
-### Main Dashboard on Iphone
-<img width="873" height="1600" alt="WhatsApp Image 2026-06-30 at 10 38 02 PM" src="https://github.com/user-attachments/assets/3a9d16e5-9605-4abe-8df9-010f32c690b8" />
-
----
-
-### Main Dashboard on Android
-<img width="1080" height="2284" alt="WhatsApp Image 2026-06-30 at 10 38 57 PM" src="https://github.com/user-attachments/assets/e6800f9d-f9a1-40a6-ac7b-d8c0a6ecd579" />
-
----
-
 ### Grading Scale Mapping
 
 <img width="1600" height="765" alt="Screenshot 2026-06-30 223321" src="https://github.com/user-attachments/assets/511ed0df-eb2e-419b-bb09-092b9a7dcbe5" />
@@ -296,6 +286,20 @@ The project uses a UoH/HEC-style grading scale.
 <img width="1600" height="757" alt="Screenshot 2026-06-30 223419" src="https://github.com/user-attachments/assets/4716eb3a-6026-465f-aeae-dc497988ffd1" />
 
 ---
+
+### Mobile Responsive View
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3a9d16e5-9605-4abe-8df9-010f32c690b8" alt="iPhone View" width="230"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/e6800f9d-f9a1-40a6-ac7b-d8c0a6ecd579" alt="Android View" width="230"/>
+</p>
+
+<p align="center">
+  <b>iPhone View</b>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Android View</b>
+</p>
 
 ## 📁 Project Structure
 
