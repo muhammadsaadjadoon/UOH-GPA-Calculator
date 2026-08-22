@@ -1,339 +1,311 @@
 # 🎓 UoH GPA Calculator
 
 <p align="center">
-  <img src="static/logo.png.jpg" alt="UoH GPA Calculator Logo" width="120">
+  <img src="static/uoh-logo-mark.png" alt="University of Haripur Logo" width="118">
 </p>
 
-<h3 align="center">A modern GPA, CGPA, and academic planning calculator for University of Haripur students</h3>
+<h3 align="center">GPA, CGPA and Academic Planning Utility for University of Haripur Students</h3>
 
 <p align="center">
-  <a href="https://uoh-gpa-calculator-dt4u.onrender.com/"><strong>🚀 Live Demo</strong></a>
+  <a href="https://uoh-gpa-calculator-dt4u.onrender.com/"><strong>Live Application</strong></a>
   ·
-  <a href="#-screenshots">Screenshots</a>
+  <a href="#features">Features</a>
   ·
-  <a href="#-features">Features</a>
+  <a href="#grading-scale">Grading Scale</a>
   ·
-  <a href="#-installation--setup">Setup</a>
+  <a href="#local-setup">Local Setup</a>
   ·
-  <a href="#-api-endpoints">API</a>
+  <a href="#deployment">Deployment</a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python" alt="Python">
-  <img src="https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi" alt="FastAPI">
-  <img src="https://img.shields.io/badge/Render-Deployed-46E3B7?style=for-the-badge&logo=render" alt="Render">
-  <img src="https://img.shields.io/badge/Status-Live-success?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Flask-Web_App-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask">
+  <img src="https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JavaScript-2454FF?style=flat-square" alt="Frontend">
+  <img src="https://img.shields.io/badge/Deployment-Render-46E3B7?style=flat-square&logo=render&logoColor=black" alt="Render">
 </p>
 
 ---
 
-## 📌 Project Overview
+## Overview
 
-**UoH GPA Calculator** is a clean, responsive, and student-friendly web application designed to help students of the **University of Haripur** calculate, track, and plan their academic performance.
+**UoH GPA Calculator** is a responsive academic utility developed for students of the **University of Haripur**.
 
-The application allows students to calculate semester **GPA**, cumulative **CGPA**, convert marks into grades, view grading scale mapping, save result history locally, and use academic planning tools such as **Target Finder** and **What-If Simulator**.
+It brings GPA calculation, CGPA calculation, grading reference, academic planning, result history, and optional student profiles into one interface. The application can be used immediately in **Guest Mode**, while students who want saved history and profile information can create an account.
 
-This project is built with a **FastAPI Python backend** and a modern responsive frontend using **HTML, CSS, and JavaScript**. It is fully deployed on **Render** and available online.
+The interface is designed to remain clear and practical on desktop, laptop, tablet, and mobile screens.
 
-🔗 **Live Demo:**
-https://uoh-gpa-calculator-dt4u.onrender.com/
-
----
-
-## 🎯 Purpose of the Project
-
-Many students calculate GPA and CGPA manually, which can easily lead to mistakes because GPA calculation depends on:
-
-* Marks obtained in each subject
-* Grade point conversion
-* Credit hours of each subject
-* Weighted quality points
-* Semester-wise CGPA calculation
-
-This project solves that problem by providing a simple and accurate web-based calculator where students can enter their academic data and instantly get their GPA, CGPA, grade letters, grade points, and academic status.
+> This is an independent student project and is not presented as an official University of Haripur portal.
 
 ---
 
-## ✨ Features
+## Features
 
-### ✅ GPA Calculator
+### GPA Calculator
 
 Calculate semester GPA by entering:
 
-* Subject name
-* Marks obtained
-* Credit hours
+- Subject name
+- Marks obtained
+- Credit hours
 
-The system automatically calculates:
+For every subject, the application determines:
 
-* Grade letter
-* Grade points
-* Quality points
-* Total credit hours
-* Final GPA
-* Pass/fail status
+- Grade letter
+- Grade points
+- Quality points
+- Total credit hours
+- Final semester GPA
 
----
-
-### ✅ CGPA Calculator
-
-Calculate cumulative CGPA by entering semester-wise data:
-
-* Semester name
-* Semester GPA
-* Semester credit hours
-
-The system calculates weighted CGPA using credit hours.
+The result updates from the information entered by the student and provides a subject-level breakdown.
 
 ---
 
-### ✅ Target Finder
+### CGPA Calculator
 
-The **Target Finder** helps students plan their academic goals.
+Calculate cumulative CGPA using semester-wise information:
 
-Students can select a goal such as:
+- Semester name
+- Semester GPA
+- Semester credit hours
 
-* Dean's List
-* Good Standing
-* Academic Improvement Target
-
-The tool helps estimate the marks or performance level required to achieve the selected academic goal.
+The calculation uses credit-hour weighting so semesters with different credit loads are handled correctly.
 
 ---
 
-### ✅ What-If Simulator
+### Grading Scale
 
-The **What-If Simulator** allows students to plan future semesters.
+The application includes a dedicated grading reference showing:
+
+- Marks range
+- Grade letter
+- Grade points
+- Academic performance description
+
+The grading section is responsive and arranged for quick reference on both mobile and desktop screens.
+
+---
+
+### Marks-to-Grade Converter
+
+A marks converter is included for quick grade checking.
+
+Enter marks from `0–100` to view the corresponding:
+
+- Letter grade
+- Grade points
+
+This is useful when a complete GPA calculation is not required.
+
+---
+
+### What-If Planner
+
+The **What-If** tool helps students estimate the performance required in upcoming coursework.
 
 Students can enter:
 
-* Current CGPA
-* Completed credit hours
-* Remaining credit hours
-* Target CGPA
+- Current CGPA
+- Completed credit hours
+- Upcoming credit hours
+- Target CGPA
 
-The system estimates the GPA required in future semesters to reach the desired CGPA.
-
----
-
-### ✅ Marks-to-Grade Converter
-
-The calculator includes a grading system that converts marks into:
-
-* Grade letter
-* Grade points
-* Academic performance level
-
-This helps students quickly understand how their marks affect GPA.
-
----
-
-### ✅ Grading Scale Mapping
-
-A clear grading scale is included inside the application so students can easily view the relationship between:
-
-* Marks range
-* Grade letter
-* Grade points
-
----
-
-### ✅ Result History
-
-The application includes a local result history layout so students can review previous calculations.
-
-History is stored locally in the browser, which means:
-
-* No login required
-* No database required
-* No personal academic data is sent to a third-party database
-
----
-
-### ✅ Responsive UI
-
-The interface is designed to work smoothly on:
-
-* Desktop screens
-* Laptops
-* Tablets
-* Mobile phones
-
----
-
-### ✅ FastAPI Backend
-
-The backend provides clean API endpoints for:
-
-* GPA calculation
-* CGPA calculation
-* Grading scale
-* Health check
-* API documentation
-
-FastAPI also provides automatic Swagger documentation at:
-
-```text
-/docs
-```
-
----
-
-## 🛠️ Tech Stack
-
-| Category        | Technology                    |
-| --------------- | ----------------------------- |
-| Backend         | Python                        |
-| Web Framework   | FastAPI                       |
-| Server          | Uvicorn ASGI Server           |
-| Data Validation | Pydantic                      |
-| Frontend        | HTML, CSS, JavaScript         |
-| Styling         | Custom CSS, Responsive Layout |
-| Storage         | Browser Local Storage         |
-| Deployment      | Render                        |
-| API Docs        | Swagger UI / FastAPI Docs     |
-
----
-
-## 🧠 Calculation Logic
-
-### GPA Formula
-
-```text
-GPA = Total Quality Points / Total Credit Hours
-```
-
-Where:
-
-```text
-Quality Points = Grade Points × Credit Hours
-```
-
-Example:
-
-```text
-Subject Marks = 85
-Grade Point = 4.00
-Credit Hours = 3
-
-Quality Points = 4.00 × 3 = 12.00
-```
-
----
-
-### CGPA Formula
-
-```text
-CGPA = Sum of Semester Quality Points / Sum of Semester Credit Hours
-```
-
-Where:
-
-```text
-Semester Quality Points = Semester GPA × Semester Credit Hours
-```
-
----
-
-## 📊 Grading Scale
-
-The project uses a UoH/HEC-style grading scale.
-
-| Marks Range | Grade | Grade Points |
-| ----------- | ----: | -----------: |
-| 85 - 100    |     A |         4.00 |
-| 80 - 84     |    A- |  3.50 - 3.90 |
-| 75 - 79     |    B+ |  3.00 - 3.40 |
-| 70 - 74     |     B |  2.50 - 2.90 |
-| 65 - 69     |    B- |  2.00 - 2.40 |
-| 60 - 64     |    C+ |  1.50 - 1.90 |
-| 55 - 59     |     C |  1.00 - 1.40 |
-| 50 - 54     |     D |  0.50 - 0.90 |
-| 0 - 49      |     F |         0.00 |
-
-> Note: Grading rules can vary by department or university policy. The grading logic can be adjusted from the backend file if required.
-
----
-
-## 📸 Screenshots
-
-### Main Dashboard
-
-<img width="1600" height="755" alt="Screenshot 2026-06-30 223301" src="https://github.com/user-attachments/assets/f285b03b-bc77-489f-b1c7-b1844bf1b6a9" />
-
----
-
-### Grading Scale Mapping
-
-<img width="1600" height="765" alt="Screenshot 2026-06-30 223321" src="https://github.com/user-attachments/assets/511ed0df-eb2e-419b-bb09-092b9a7dcbe5" />
-
----
-
-### Result History
-
-<img width="1600" height="757" alt="Screenshot 2026-06-30 223339" src="https://github.com/user-attachments/assets/e3f3ac50-0987-4f7c-b5cc-515f2bade504" />
-
----
-
-### What-If Simulator
-
-<img width="1600" height="755" alt="Screenshot 2026-06-30 223400" src="https://github.com/user-attachments/assets/e2b1b96a-ea2e-42a9-9dc7-e0cb4f2b5b9f" />
+The calculator then estimates the GPA required to move toward the selected academic target.
 
 ---
 
 ### Target Finder
 
-<img width="1600" height="757" alt="Screenshot 2026-06-30 223419" src="https://github.com/user-attachments/assets/4716eb3a-6026-465f-aeae-dc497988ffd1" />
+The **Target Finder** helps students plan a desired semester GPA.
+
+Students select a target and enter the credit hours for upcoming subjects. The tool estimates the level of marks required across those subjects to reach the selected GPA target.
 
 ---
 
-### Mobile Responsive View
+### Optional Student Accounts
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/3a9d16e5-9605-4abe-8df9-010f32c690b8" alt="iPhone View" width="230"/>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/user-attachments/assets/e6800f9d-f9a1-40a6-ac7b-d8c0a6ecd579" alt="Android View" width="230"/>
-</p>
+An account is **not required** to use the main calculator.
 
-<p align="center">
-  <b>iPhone View</b>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>Android View</b>
-</p>
+Students may create an account when they want access to personal features such as:
 
-## 📁 Project Structure
+- Saved result history
+- Student profile
+- Profile photo
+- Academic information
+
+Guest Mode remains available for students who only want to perform calculations.
+
+---
+
+### Student Profile
+
+Signed-in users can maintain a personal profile containing:
+
+- Full name
+- Email address
+- Profile photo
+- Student ID
+- Program / degree
+- Current semester
+- Target CGPA
+- Short academic note
+
+The sign-in email remains read-only inside the profile to avoid accidental account changes.
+
+Profile images are resized before being saved so the interface remains lightweight.
+
+---
+
+### Account History
+
+Signed-in users can review previous GPA and CGPA results from the **History** section.
+
+Saved entries include information such as:
+
+- GPA or CGPA value
+- Grade
+- Credit hours
+- Quality points
+- Number of subjects or semesters
+- Date and time of calculation
+
+History entries can also be removed or cleared by the user.
+
+---
+
+### Responsive Interface
+
+The application is designed for:
+
+- Desktop computers
+- Laptops
+- Tablets
+- Android phones
+- iPhones
+- Smaller mobile screens
+
+The mobile interface uses compact controls and app-style navigation so the main tools remain easy to access without horizontal page overflow.
+
+---
+
+## Calculation Method
+
+### GPA
+
+The semester GPA is calculated using weighted quality points:
+
+```text
+Quality Points = Grade Points × Credit Hours
+```
+
+```text
+GPA = Total Quality Points / Total Credit Hours
+```
+
+Example:
+
+```text
+Grade Points = 4.00
+Credit Hours = 3
+
+Quality Points = 4.00 × 3
+               = 12.00
+```
+
+All subjects are combined using the same credit-hour weighting before the final GPA is calculated.
+
+---
+
+### CGPA
+
+CGPA is calculated using semester GPA and semester credit hours:
+
+```text
+Semester Quality Points = Semester GPA × Semester Credit Hours
+```
+
+```text
+CGPA = Total Semester Quality Points / Total Semester Credit Hours
+```
+
+This method prevents a semester with fewer credit hours from receiving the same weight as a semester with a larger academic load.
+
+---
+
+## Grading Scale
+
+The calculator is currently configured with the following grading ranges:
+
+| Marks Range | Grade | Base Grade Points | Description |
+|:-----------:|:-----:|:-----------------:|-------------|
+| 85–100 | A | 4.00 | Outstanding |
+| 80–84 | A- | 3.50 | Excellent |
+| 75–79 | B+ | 3.00 | Very Good |
+| 70–74 | B | 2.50 | Good |
+| 65–69 | B- | 2.00 | Satisfactory |
+| 60–64 | C+ | 1.50 | Adequate |
+| 55–59 | C | 1.00 | Pass |
+| 50–54 | D | 0.50 | Minimum Pass |
+| 0–49 | F | 0.00 | Fail |
+
+> Academic grading policies can change. Students should confirm the grading policy applicable to their department, course, and academic session when using the calculator for official planning.
+
+---
+
+## Technology
+
+| Area | Technology |
+|------|------------|
+| Backend | Python |
+| Web Framework | Flask |
+| Frontend | HTML, CSS, JavaScript |
+| Local Database | SQLite |
+| Password Security | Werkzeug password hashing |
+| Production Server | Gunicorn |
+| Deployment | Render |
+| Responsive Design | Custom CSS |
+
+No frontend framework is required for the main interface.
+
+---
+
+## Project Structure
+
+The main project can be organized as follows:
 
 ```text
 UoH-GPA-Calculator/
 │
-├── main.py                  # FastAPI backend application
-├── requirements.txt          # Python dependencies
-├── runtime.txt               # Python runtime version for deployment
-├── Procfile                  # Render start command
-├── render.yaml               # Render deployment configuration
-├── Dockerfile                # Optional Docker deployment file
-├── .dockerignore             # Docker ignore file
-├── .gitignore                # Git ignored files
-├── README.md                 # Project documentation
-├── COMMANDS.md               # Useful project commands
-├── DEPLOYMENT.md             # Deployment guide
-├── PROJECT_REPORT.md         # Academic project report
+├── app.py
+├── main.py
+├── index.html
+├── requirements.txt
+├── README.md
+├── .gitignore
 │
-├── static/
-│   └── logo.png.jpg          # Project logo/static assets
-│
-├── templates/
-│   └── index.html            # Main frontend interface
-│
-└── tests/
-    └── test_api.py           # API test cases
+└── static/
+    ├── css/
+    │   └── app.css
+    │
+    ├── js/
+    │   └── app.js
+    │
+    └── uoh-logo.jpg
 ```
+
+The application uses Flask for the backend and serves the responsive frontend from the same project.
 
 ---
 
-## 🚀 Installation & Setup
+## Local Setup
 
-Follow these steps to run the project locally.
+### Requirements
+
+Before starting, make sure the following are installed:
+
+- Python 3.11 or newer
+- pip
+- Git
 
 ---
 
@@ -343,53 +315,59 @@ Follow these steps to run the project locally.
 git clone https://github.com/YOUR_USERNAME/uoh-gpa-calculator.git
 ```
 
+Move into the project directory:
+
 ```bash
 cd uoh-gpa-calculator
 ```
 
-Replace `YOUR_USERNAME` with your actual GitHub username.
+Replace `YOUR_USERNAME` with the GitHub username that owns the repository.
 
 ---
 
-### 2. Create Virtual Environment
-
-#### Windows
-
-```bash
-python -m venv venv
-```
-
-#### Mac/Linux
-
-```bash
-python3 -m venv venv
-```
-
----
-
-### 3. Activate Virtual Environment
-
-#### Windows CMD
-
-```cmd
-venv\Scripts\activate
-```
+### 2. Create a Virtual Environment
 
 #### Windows PowerShell
 
 ```powershell
-venv\Scripts\Activate.ps1
+py -m venv .venv
 ```
 
-#### Mac/Linux
+Activate it:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+If PowerShell blocks script execution for the current session:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
+Then activate the environment again:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+#### macOS / Linux
 
 ```bash
-source venv/bin/activate
+python3 -m venv .venv
+```
+
+```bash
+source .venv/bin/activate
 ```
 
 ---
 
-### 4. Install Dependencies
+### 3. Install Dependencies
+
+```bash
+python -m pip install --upgrade pip
+```
 
 ```bash
 pip install -r requirements.txt
@@ -397,50 +375,97 @@ pip install -r requirements.txt
 
 ---
 
-### 5. Run the Application Locally
+### 4. Run the Application
 
 ```bash
-uvicorn main:app --reload
+python app.py
 ```
 
-Now open this URL in your browser:
+Open:
 
 ```text
-http://127.0.0.1:8000
+http://127.0.0.1:5000
+```
+
+Health check:
+
+```text
+http://127.0.0.1:5000/health
+```
+
+Stop the development server with:
+
+```text
+Ctrl + C
 ```
 
 ---
 
-## 🌐 Useful Local URLs
+## Environment Variables
 
-| Purpose           | URL                                   |
-| ----------------- | ------------------------------------- |
-| Main App          | `http://127.0.0.1:8000`               |
-| API Docs          | `http://127.0.0.1:8000/docs`          |
-| Health Check      | `http://127.0.0.1:8000/health`        |
-| Grading Scale API | `http://127.0.0.1:8000/grading-scale` |
+### `APP_SECRET`
 
----
+Flask uses a secret key for signed session cookies.
 
-## 🔌 API Endpoints
+For production, generate a secure value:
 
-| Method | Endpoint          | Description                       |
-| ------ | ----------------- | --------------------------------- |
-| GET    | `/`               | Serves the main web application   |
-| GET    | `/health`         | Returns application health status |
-| GET    | `/logo`           | Serves project logo               |
-| GET    | `/grading-scale`  | Returns grading scale data        |
-| POST   | `/calculate-gpa`  | Calculates GPA from subjects      |
-| POST   | `/calculate-cgpa` | Calculates CGPA from semesters    |
+```bash
+python -c "import secrets; print(secrets.token_urlsafe(48))"
+```
+
+Store the generated value as:
+
+```text
+APP_SECRET
+```
+
+Do not commit the actual secret to GitHub.
 
 ---
 
-## 📤 GPA API Example
+### `COOKIE_SECURE`
 
-### Request
+For HTTPS production deployment:
+
+```text
+COOKIE_SECURE=1
+```
+
+For ordinary local development over `http://127.0.0.1`:
+
+```text
+COOKIE_SECURE=0
+```
+
+---
+
+## API Routes
+
+The Flask application provides the following routes:
+
+| Method | Route | Purpose |
+|--------|-------|---------|
+| GET | `/` | Main application |
+| GET | `/health` | Application health check |
+| GET | `/api/auth/me` | Current authentication state |
+| POST | `/api/auth/register` | Create an account |
+| POST | `/api/auth/login` | Sign in |
+| POST | `/api/auth/logout` | Sign out |
+| GET | `/api/profile` | Load signed-in profile |
+| PUT | `/api/profile` | Update profile |
+| GET | `/api/history` | Load account calculation history |
+| POST | `/api/history` | Save a calculation result |
+| DELETE | `/api/history/<id>` | Remove one saved result |
+| DELETE | `/api/history` | Clear saved history |
+| POST | `/api/calculate-gpa` | Calculate semester GPA |
+| POST | `/api/calculate-cgpa` | Calculate cumulative CGPA |
+
+---
+
+## Example GPA Request
 
 ```http
-POST /calculate-gpa
+POST /api/calculate-gpa
 Content-Type: application/json
 ```
 
@@ -461,44 +486,14 @@ Content-Type: application/json
 }
 ```
 
-### Response
-
-```json
-{
-  "gpa": 3.7,
-  "letter": "A-",
-  "total_credits": 6,
-  "total_quality_points": 22.2,
-  "subjects": [
-    {
-      "name": "Artificial Intelligence",
-      "marks": 88,
-      "credit_hours": 3,
-      "grade": "A",
-      "points": 4.0,
-      "quality_points": 12.0
-    },
-    {
-      "name": "Database Systems",
-      "marks": 76,
-      "credit_hours": 3,
-      "grade": "B+",
-      "points": 3.1,
-      "quality_points": 9.3
-    }
-  ],
-  "passed": true
-}
-```
+The response contains the calculated GPA together with subject grades, grade points, credit hours, and quality points.
 
 ---
 
-## 📤 CGPA API Example
-
-### Request
+## Example CGPA Request
 
 ```http
-POST /calculate-cgpa
+POST /api/calculate-cgpa
 Content-Type: application/json
 ```
 
@@ -507,216 +502,257 @@ Content-Type: application/json
   "semesters": [
     {
       "name": "Semester 1",
-      "gpa": 3.2,
+      "gpa": 3.20,
       "credit_hours": 18
     },
     {
       "name": "Semester 2",
-      "gpa": 3.6,
+      "gpa": 3.60,
       "credit_hours": 18
     }
   ]
 }
 ```
 
-### Response
+The response contains the weighted CGPA and semester-level calculation details.
 
-```json
-{
-  "cgpa": 3.4,
-  "letter": "A-",
-  "total_credits": 36,
-  "total_quality_points": 122.4,
-  "semesters": [
-    {
-      "name": "Semester 1",
-      "gpa": 3.2,
-      "credit_hours": 18,
-      "letter": "B+",
-      "quality_points": 57.6
-    },
-    {
-      "name": "Semester 2",
-      "gpa": 3.6,
-      "credit_hours": 18,
-      "letter": "A-",
-      "quality_points": 64.8
-    }
-  ]
-}
+---
+
+## Data and Privacy
+
+The calculator can be used without an account.
+
+For signed-in users:
+
+- Passwords are stored as password hashes rather than plain-text passwords.
+- Account history is associated with the signed-in user.
+- Profile information is stored by the application backend.
+- Profile photos are processed and reduced in size before being saved.
+- Session authentication uses an HttpOnly cookie.
+
+Sensitive runtime files should never be committed to the repository.
+
+The `.gitignore` should exclude at least:
+
+```gitignore
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+instance/
+*.db
+*.sqlite
+*.sqlite3
+
+.env
+.env.*
+
+.DS_Store
+Thumbs.db
 ```
 
 ---
 
-## 🧪 Testing
+## Deployment
 
-If you want to run the API tests, install test dependencies first:
+The project can be deployed as a Python **Web Service** on Render.
 
-```bash
-pip install pytest httpx
+### Render Configuration
+
+| Setting | Value |
+|---------|-------|
+| Service Type | Web Service |
+| Runtime | Python |
+| Branch | `main` |
+| Build Command | `pip install -r requirements.txt` |
+| Start Command | `gunicorn app:app --bind 0.0.0.0:$PORT --workers 1 --threads 4 --timeout 60` |
+| Health Check Path | `/health` |
+
+Recommended production environment variables:
+
+```text
+APP_SECRET=<secure-random-value>
+COOKIE_SECURE=1
 ```
 
-Then run:
+---
 
-```bash
-pytest
+### Important Note About SQLite on Render
+
+The application uses SQLite for its current local backend storage.
+
+If account, profile, and history data must remain available across Render restarts or redeployments, the database needs persistent storage.
+
+For a Render service using a persistent disk, the application `instance` directory can be mounted at:
+
+```text
+/opt/render/project/src/instance
 ```
 
----
+Without persistent storage, SQLite data should not be treated as permanent on an ephemeral hosting filesystem.
 
-## ☁️ Deployment on Render
-
-This project is ready to deploy on **Render**.
-
-### Render Settings
-
-| Setting           | Value                                          |
-| ----------------- | ---------------------------------------------- |
-| Service Type      | Web Service                                    |
-| Language          | Python                                         |
-| Branch            | `main`                                         |
-| Build Command     | `pip install -r requirements.txt`              |
-| Start Command     | `uvicorn main:app --host 0.0.0.0 --port $PORT` |
-| Health Check Path | `/health`                                      |
+For larger production use, migrating account data to a managed database such as PostgreSQL would be a better long-term option.
 
 ---
 
-### Manual Render Deployment Steps
+## GitHub Workflow
 
-1. Push your code to GitHub.
-2. Open your Render dashboard.
-3. Click **New +**.
-4. Select **Web Service**.
-5. Connect your GitHub repository.
-6. Select the repository.
-7. Add the build and start commands.
-8. Click **Create Web Service**.
-9. Wait for deployment to complete.
-10. Open the live Render URL.
-
----
-
-## 🧾 GitHub Push Commands
-
-Use these commands when pushing the project to GitHub for the first time:
+Initialize Git if required:
 
 ```bash
 git init
 ```
 
+Add files:
+
 ```bash
 git add .
 ```
 
+Commit:
+
 ```bash
-git commit -m "Initial commit: UoH GPA Calculator"
+git commit -m "Initial release: UoH GPA Calculator"
 ```
+
+Set the main branch:
 
 ```bash
 git branch -M main
 ```
 
+Connect the repository:
+
 ```bash
 git remote add origin https://github.com/YOUR_USERNAME/uoh-gpa-calculator.git
 ```
+
+Push:
 
 ```bash
 git push -u origin main
 ```
 
----
-
-## 🔐 Data Privacy
-
-This project does not require user login and does not store student data on a server database.
-
-Result history is stored in the user's browser local storage, which keeps the project lightweight and privacy-friendly.
-
----
-
-## ⚙️ Environment Variables
-
-No custom environment variables are required for local development.
-
-For Render deployment, the platform automatically provides the `$PORT` variable used in the start command:
+For later updates:
 
 ```bash
-uvicorn main:app --host 0.0.0.0 --port $PORT
+git add .
+git commit -m "Update GPA Calculator"
+git push origin main
 ```
 
----
-
-## 🧩 Future Improvements
-
-Planned or possible future improvements:
-
-* PDF result export
-* Dark mode
-* Student profile-based saved history
-* Department-wise grading scale options
-* Semester planner dashboard
-* GPA trend charts
-* Authentication system
-* Admin panel for grading policy updates
+A connected Render service can automatically redeploy when new commits are pushed to the deployment branch.
 
 ---
 
-## 🤝 Contributing
+## Screenshots
 
-Contributions, suggestions, and improvements are welcome.
+The screenshots below show the current desktop and mobile interface of the application.
 
-To contribute:
+### Desktop — GPA Calculator
 
-1. Fork the repository.
-2. Create a new branch.
-
-```bash
-git checkout -b feature/your-feature-name
-```
-
-3. Make your changes.
-4. Commit your changes.
-
-```bash
-git commit -m "Add new feature"
-```
-
-5. Push to your branch.
-
-```bash
-git push origin feature/your-feature-name
-```
-
-6. Open a pull request.
+<img src="docs/screenshots/desktop-dashboard.png" alt="UoH GPA Calculator desktop dashboard" width="100%">
 
 ---
 
-## 📄 License
+### Desktop — Grading Scale
 
-This project is open-source and can be used for learning, academic, and educational purposes.
-
-You may add an MIT License file if you want to make the repository formally open-source.
+<img src="docs/screenshots/desktop-grading-scale.png" alt="UoH GPA Calculator grading scale on desktop" width="100%">
 
 ---
 
-## 👨‍💻 Author
+### Desktop — What-If Planner
 
-**Muhammad Saad Jadoon**
-BS Artificial Intelligence
-IT Student at University of Haripur
+<img src="docs/screenshots/desktop-what-if-planner.png" alt="UoH GPA Calculator What-If Planner on desktop" width="100%">
 
 ---
 
-## ⭐ Support
+### Desktop — Target Finder
 
-If this project helps you, please consider giving the repository a star.
-
-Your support helps improve and grow student-focused academic tools.
+<img src="docs/screenshots/desktop-target-finder.png" alt="UoH GPA Calculator Target Finder on desktop" width="100%">
 
 ---
 
-## 🔎 Keywords
+### Desktop — Sign In
 
-```text
-UoH GPA Calculator, University of Haripur GPA Calculator, CGPA Calculator Pakistan, HEC GPA Calculator, FastAPI GPA Calculator, Python GPA Calculator, Student Academic Planner, GPA Target Finder, CGPA What-If Simulator
-```
+<img src="docs/screenshots/desktop-sign-in.png" alt="UoH GPA Calculator sign in screen" width="100%">
+
+---
+
+### Desktop — Create Account
+
+<img src="docs/screenshots/desktop-create-account.png" alt="UoH GPA Calculator create account screen" width="100%">
+
+---
+
+### Desktop — CGPA Calculator
+
+<img src="docs/screenshots/desktop-cgpa-calculator.png" alt="UoH GPA Calculator CGPA calculator on desktop" width="100%">
+
+---
+
+### Mobile Interface
+
+<p align="center">
+  <img src="docs/screenshots/mobile-dashboard-profile.png" alt="Mobile dashboard with profile" width="260">
+  &nbsp;&nbsp;
+  <img src="docs/screenshots/mobile-calculator.png" alt="Mobile GPA calculator" width="260">
+</p>
+
+<p align="center">
+  <strong>Dashboard &amp; Profile</strong>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <strong>GPA Calculator</strong>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/mobile-profile-page.png" alt="Mobile student profile page" width="260">
+  &nbsp;&nbsp;
+  <img src="docs/screenshots/mobile-sign-in.png" alt="Mobile sign in screen" width="260">
+</p>
+
+<p align="center">
+  <strong>Student Profile</strong>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <strong>Sign In</strong>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/mobile-grading-scale.png" alt="Mobile grading scale" width="260">
+  &nbsp;&nbsp;
+  <img src="docs/screenshots/mobile-target-finder.png" alt="Mobile Target Finder" width="260">
+</p>
+
+<p align="center">
+  <strong>Grading Scale</strong>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <strong>Target Finder</strong>
+</p>
+
+---
+
+## Notes
+
+- The calculator should be used as an academic planning utility.
+- Students should confirm official results through the university's official academic records.
+- Grading policies may differ by department, course, or academic session.
+- The project does not claim to replace an official university result system.
+
+---
+
+## Author
+
+**Muhammad Saad Jadoon**  
+BS Artificial Intelligence — 3rd Semester  
+University of Haripur
+
+---
+
+## Project Links
+
+**Live Application**  
+https://uoh-gpa-calculator-dt4u.onrender.com/
+
+**Repository**  
+Add the GitHub repository URL here after publishing the project.
