@@ -7,7 +7,7 @@
 <h3 align="center">GPA, CGPA and Academic Planning Utility for University of Haripur Students</h3>
 
 <p align="center">
-  <a href="https://muhammadsaadjadoon.netlify.app/"><strong>Live Application</strong></a>
+  <a href="https://uohgpacalculator.netlify.app/"><strong>Live Application</strong></a>
   ·
   <a href="#features">Features</a>
   ·
@@ -752,7 +752,7 @@ University of Haripur
 ## Project Links
 
 **Live Application**  
-https://muhammadsaadjadoon.netlify.app/
+https://uohgpacalculator.netlify.app/
 
 **Repository**  
 Add the GitHub repository URL here after publishing the project.
