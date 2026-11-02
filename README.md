@@ -312,7 +312,7 @@ Before starting, make sure the following are installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/uoh-gpa-calculator.git
+git clone https://github.com/muhammadsaadjadoon/uoh-gpa-calculator.git
 ```
 
 Move into the project directory:
@@ -321,7 +321,7 @@ Move into the project directory:
 cd uoh-gpa-calculator
 ```
 
-Replace `YOUR_USERNAME` with the GitHub username that owns the repository.
+Replace `muhammadsaadjadoon` with the GitHub username that owns the repository.
 
 ---
 
@@ -625,7 +625,7 @@ git branch -M main
 Connect the repository:
 
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/uoh-gpa-calculator.git
+git remote add origin https://github.com/muhammadsaadjadoon/uoh-gpa-calculator.git
 ```
 
 Push:
@@ -755,4 +755,4 @@ University of Haripur
 https://uohgpacalculator.netlify.app/
 
 **Repository**  
-Add the GitHub repository URL here after publishing the project.
+https://github.com/muhammadsaadjadoon/UOH-GPA-Calculator
